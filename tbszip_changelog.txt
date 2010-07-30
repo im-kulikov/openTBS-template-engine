@@ -1,0 +1,13 @@
+****************
+TbsZip changelog
+****************
+Skrol29
+http://www.tinybutstrong.com/onlyyou.html
+
+Version 2.1, 2010-07-01
+- bug fixed: minutes and seconds were erroneous when adding a new file in the archive
+- now change the date and time of a file in the archive when the file content is replaced
+- new method CreateNew() which allow to start with an empty archive wihtout an existing one
+
+Version 2.0, 2010-05-25
+- All is quite new, there is no TbsZip 1.0. The previous version was a class incoprrated into the OpenTbs project and was called MiniZip.
