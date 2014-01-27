@@ -1,0 +1,13 @@
+version 1.8.2
+
+- Based on TbsZip 2.15
+
+- Supports new parameter "parallel" given with TBS 3.9.0
+
+- Manage RSID problem with ODT (with LibreOffice>=4).
+
+- Bug when merging numerical cells in ODS files built with LibreOffice>=4
+  it's about new attribute "calcext:value-type" in ODS cells in LibreOffice 4 
+  http://www.tinybutstrong.com/forum.php?thr=3246
+
+- Nouvelle option interne : $TBS->OtbsClearWriter
