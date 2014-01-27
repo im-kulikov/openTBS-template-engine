@@ -1,0 +1,54 @@
+TinyButStrong 3.9.0
+
+Skrol29, 2014-01-26
+
+Change-log:
+===========
+
+New features:
+- New parameter "parallel" for merging a block in columns (or any other parallel ways).
+- New way for merging sub-template: PHP error messages are not absorbed any more.
+  This new way may not be compatible with subscripts that uses the echo command (very rare).
+  In this case you should add set option $TBS->SetOptions('old_subtemplate') for compatibility.
+
+Enhancements:
+- Error messages are in plain text instead of HTML when PHP is used in command line (CLI).
+- Now can merge DateTime objects and also objects with the magic method __toString().
+- Some code enhancements.
+  - replace or  with ||
+  - replace and with &&
+  
+Fixed bugs:
+- HTML plug-in version 1.0.8: parameter "select" now works with values containing special HTML characters.
+- Parameter "frm": leading zero coming with a prefix or a suffix may not format the number as expected.
+  http://www.tinybutstrong.com/forum.php?thr=3208
+- There use to have an error message about $Loc->AttForward when the entity of parameter "att" is not found.
+
+------------------------------------
+
+TinyButStrong 3.8.2
+
+Skrol29, 2013-04-20
+
+Change-log:
+===========
+
+- Explicit error message when a colmun is missing for a grouping paremeter (headergrp, footergrp, splittergrp)
+
+- Add option methods_allowed
+
+------------------------------------
+
+TinyButStrong 3.8.1
+
+Skrol29, 2012-04-01
+
+Change-log:
+===========
+
+PHP 5.4 :
+Unexpected PHP error [Array to string conversion] severity [E_NOTICE] in [D:\Users\Qwerty\Dev HTML\Site Dev\svn_TinyButStrong\trunk\tbs_class.php line 72]
+
+Unexpected PHP error [Array to string conversion] severity [E_NOTICE] in [D:\Users\Qwerty\Dev HTML\Site Dev\svn_TinyButStrong\trunk\tbs_class.php line 1369]
+
+Plugin MergeOnFly
